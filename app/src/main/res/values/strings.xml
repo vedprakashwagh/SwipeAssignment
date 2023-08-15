@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Swipe Assignment</string>
+    <string name="add_product">Add Product</string>
+    <string name="fragment_products_list">Product List</string>
+    <string-array name="product_types">
+        <item>Product</item>
+        <item>Service</item>
+        <item>Commodity</item>
+        <item>Other</item>
+    </string-array>
+</resources>

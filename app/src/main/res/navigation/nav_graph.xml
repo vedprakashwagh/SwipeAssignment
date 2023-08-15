@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ProductListFragment">
+
+    <fragment
+        android:id="@+id/ProductListFragment"
+        android:name="com.vedprakashwagh.swipeassignment.ui.products.ProductList"
+        android:label="@string/fragment_products_list"
+        tools:layout="@layout/fragment_product_list">
+
+        <action
+            android:id="@+id/action_ProductListFragment_to_AddProductDialogFragment"
+            app:destination="@id/AddProductDialogFragment" />
+    </fragment>
+
+    <dialog android:id="@+id/AddProductDialogFragment"
+        android:name="com.vedprakashwagh.swipeassignment.ui.products.ProductListAddItemDialogFragment"
+        android:label="@string/add_product"
+        tools:layout="@layout/fragment_add_product"/>
+</navigation>
